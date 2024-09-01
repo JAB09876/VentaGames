@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Consolas - PS5 & Xbox Series X</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #1a1a1a;
+    }
+    .navbar-brand {
+      color: #fff;
+    }
+    .hero-section {
+      background: linear-gradient(to right, #003087, #107c10);
+      color: #fff;
+      padding: 60px 0;
+    }
+    .product-card {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .product-card img {
+      border-bottom: 5px solid #003087;
+    }
+    .product-card .btn-primary {
+      background-color: #003087;
+      border: none;
+    }
+    .product-card .btn-primary:hover {
+      background-color: #0054ba;
+    }
+    .product-card .btn-secondary {
+      background-color: #107c10;
+      border: none;
+    }
+    .product-card .btn-secondary:hover {
+      background-color: #189a18;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">Consolas Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#accesorios">Accesorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#juegos">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#noticias">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4">Las Mejores Consolas de Nueva Generación</h1>
+      <p class="lead">PS5 & Xbox Series X disponibles ahora.</p>
+      <a href="#productos" class="btn btn-light btn-lg mt-4">Ver Productos</a>
+    </div>
+  </div>
+
+  <!-- Productos -->
+  <div id="productos" class="container my-5">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- PS5 -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://media.direct.playstation.com/is/image/sierialto/ps5-slim-model-hero-new?$Background_Large$" class="card-img-top" alt="PS5">
+          <div class="card-body">
+            <h5 class="card-title">PlayStation 5</h5>
+            <p class="card-text">La consola más avanzada de Sony, con gráficos impresionantes y tecnología de última generación.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Ver detalles de la PS5">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <!-- Xbox Series X -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://media.wired.com/photos/5fa5dc3dba670daaf8e97a8d/master/w_1600,c_limit/games_gear_series-x.jpg" class="card-img-top" alt="Xbox Series X">
+          <div class="card-body">
+            <h5 class="card-title">Xbox Series X</h5>
+            <p class="card-text">La consola más potente de Microsoft, diseñada para un rendimiento extremo y juegos en 4K.</p>
+            <a href="#" class="btn btn-secondary" data-bs-toggle="tooltip" title="Ver detalles de la Xbox Series X">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accesorios -->
+  <div id="accesorios" class="container my-5">
+    <h2 class="text-center mb-4">Accesorios</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Control PS5 -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$" class="card-img-top" alt="Control PS5">
+          <div class="card-body">
+            <h5 class="card-title">Control DualSense para PS5</h5>
+            <p class="card-text">Experimenta una inmersión sin igual con el nuevo control inalámbrico DualSense para PS5.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Ver detalles del control PS5">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <!-- Control Xbox -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://target.scene7.com/is/image/Target/GUEST_bdc70c48-04c9-4341-84ba-92e2614807ec?wid=1200&hei=1200&qlt=80&fmt=webp" class="card-img-top" alt="Control Xbox">
+          <div class="card-body">
+            <h5 class="card-title">Control Inalámbrico Xbox</h5>
+            <p class="card-text">Control inalámbrico ergonómico para Xbox, con nuevas funciones de personalización.</p>
+            <a href="#" class="btn btn-secondary" data-bs-toggle="tooltip" title="Ver detalles del control Xbox">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <!-- Auriculares -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://extremetechcr.com/tienda/14809-large_default/razer-kraken-v3-x.jpg" class="card-img-top" alt="Auriculares Razer Kraken X">
+          <div class="card-body">
+            <h5 class="card-title">Auriculares Razer Kraken X</h5>
+            <p class="card-text">Auriculares ligeros y cómodos con sonido envolvente para una experiencia de juego inmersiva.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Ver detalles de los auriculares Razer Kraken X">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Juegos -->
+  <div id="juegos" class="container my-5">
+    <h2 class="text-center mb-4">Juegos Recomendados</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Juego PS5 -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://innovacellcr.com/cdn/shop/files/spider-man-miles-morales-juego-play-station-5-innovacell.png?v=1718200835&width=540" class="card-img-top" alt="Spider-Man Miles Morales">
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man: Miles Morales (PS5)</h5>
+            <p class="card-text">Sigue la historia de Miles Morales en esta emocionante aventura de Spider-Man para PS5.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Ver detalles de Spider-Man: Miles Morales">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <!-- Juego Xbox -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://preview.redd.it/n4vp37nve2e51.png?width=1080&crop=smart&auto=webp&s=768578c0940f5a8cec282b110461bfda7cc0d33b" class="card-img-top" alt="Halo Infinite">
+          <div class="card-body">
+            <h5 class="card-title">Halo Infinite (Xbox)</h5>
+            <p class="card-text">El regreso de Master Chief en Halo Infinite, la última entrega de la saga de acción y aventura para Xbox.</p>
+            <a href="#" class="btn btn-secondary" data-bs-toggle="tooltip" title="Ver detalles de Halo Infinite">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+      <!-- Juego Multiplataforma -->
+      <div class="col">
+        <div class="card product-card">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/header.jpg?t=1697654233" class="card-img-top" alt="Assassin's Creed Valhalla">
+          <div class="card-body">
+            <h5 class="card-title">Assassin's Creed Valhalla</h5>
+            <p class="card-text">Embárcate en una épica aventura vikinga en Assassin's Creed Valhalla, disponible para PS5 y Xbox Series X.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Ver detalles de Assassin's Creed Valhalla">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Noticias -->
+  <div id="noticias" class="container my-5">
+    <h2 class="text-center mb-4">Últimas Noticias</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Noticia 1 -->
+      <div class="col">
+        <div class="card">
+          <img src="https://areajugones.sport.es/wp-content/uploads/2024/07/ps5-actualizacion-760x420.jpg.webp" class="card-img-top" alt="Actualización PS5">
+          <div class="card-body">
+            <h5 class="card-title">Actualización de PS5</h5>
+            <p class="card-text">La última actualización de firmware para PS5 trae nuevas funcionalidades y mejoras en el rendimiento.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" title="Leer más sobre la actualización de PS5">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Noticia 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="https://mvsnoticias.com/u/fotografias/m/2024/3/21/f960x540-608497_682572_4162.png" class="card-img-top" alt="Oferta Xbox Series X">
+          <div class="card-body">
+            <h5 class="card-title">Oferta Especial en Xbox Series X</h5>
+            <p class="card-text">Aprovecha la oferta especial en Xbox Series X, con descuentos exclusivos por tiempo limitado.</p>
+            <a href="#" class="btn btn-secondary" data-bs-toggle="tooltip" title="Leer más sobre la oferta en Xbox Series X">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 Consolas Store. Todos los derechos reservados.</p>
+      <p>
+        <a href="#">Términos de Uso</a> |
+        <a href="#">Política de Privacidad</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- Activar tooltips -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+</html>
